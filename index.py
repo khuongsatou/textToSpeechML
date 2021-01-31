@@ -25,7 +25,7 @@ file_name = 'script.txt'
 f = None
 
 #---- Config ----
-text_val = 'i am impressed by your contributions to society every year and i want to become a volunteer in those meaning activities. I also like the ways you support your employees. I know that you pay for employees to develop the new techniques and skills. I think that really helps to build employee satisfaction and loyalty'  
+text_val = 'I know that you pay for employees to develop the new techniques and skills.'  
 
 #B1 Start tách data ra 
 data = text_val.split('.')
