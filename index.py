@@ -16,6 +16,16 @@ from datetime import datetime
 import os
 from googletrans import Translator
 
+# Input from terminal
+
+# import argparse
+# ap = argparse.ArgumentParser()
+# ap.add_argument("-t", "--text", required=True, help="Path to text")
+# args = vars(ap.parse_args())
+# text_val = args["text"]
+
+# End Input from terminal
+
 # Constaint
 translator = Translator(service_urls=['translate.googleapis.com','translate.google.com','translate.google.co.kr'])
 path = os.path.dirname(os.path.abspath(__file__))
@@ -25,10 +35,10 @@ file_name = 'script.txt'
 f = None
 
 #---- Config ----
-text_val = 'I know that you pay for employees to develop the new techniques and skills.'  
+text_val = 'I am good at teamwork. During my school time, I had many projects woking in group of 3 or 4. We gave feedbacks to each other and helped other members to complete the projects more efficiently.  Thus, We had good results . Besides, I am also a punctual person. I always arrived early and completed my work on time in my internship.'  
 
 #B1 Start tách data ra 
-data = text_val.split('.')
+data = text_val.strip('.').split('.')
 _len = len(data)
 
 
@@ -65,8 +75,8 @@ def x5(str):
     return result
 
 
-def textToSpeech(str,slow):
-    return gtts.gTTS(text=str, lang='en', slow=slow)
+def textToSpeech(txtStr,slow):
+    return gtts.gTTS(text=str(txtStr), lang='en', slow=slow)
 
 def saveSpeech(speech,i,speed):
     speech.save(str(date)+"/"+str(i)+"_"+str(speed)+"_"+str(random_date.time())+".mp3")
