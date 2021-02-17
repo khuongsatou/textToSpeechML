@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "venv":"source ./venv/bin/activate&&python index.py",
+        "run":"python index.py"
+    }
+}

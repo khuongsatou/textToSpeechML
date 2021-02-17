@@ -35,7 +35,7 @@ file_name = 'script.txt'
 f = None
 
 #---- Config ----
-text_val = 'I am good at teamwork. During my school time, I had many projects woking in group of 3 or 4. We gave feedbacks to each other and helped other members to complete the projects more efficiently.  Thus, We had good results . Besides, I am also a punctual person. I always arrived early and completed my work on time in my internship.'  
+text_val = 'Over the next five years,  my goals involve growing with a company where I can continue to learn, take on more responsibilities, and contribute as much value as I can. I also want to speak English more fluently so that I can exchange the experience with the foreign mechanics.'
 
 #B1 Start tách data ra 
 data = text_val.strip('.').split('.')
