@@ -35,7 +35,7 @@ file_name = 'script.txt'
 f = None
 
 #---- Config ----
-text_val = 'Over the next five years,  my goals involve growing with a company where I can continue to learn, take on more responsibilities, and contribute as much value as I can. I also want to speak English more fluently so that I can exchange the experience with the foreign mechanics.'
+text_val = 'I am so impressed by your contributions to society every year and I want to become a volunteer in those meaningful activities. I also like the ways you support your employees. I know that you pay for employees to develop the new techniques and skills. I think that really helps to build employee satisfaction and loyalty.'
 
 #B1 Start tách data ra 
 data = text_val.strip('.').split('.')
