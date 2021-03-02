@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p>Click the button to wait 3 seconds, then alert "Question".</p>
+    <p>After clicking away the alert box, an new alert box will appear in 3 seconds. This goes on forever...</p>
+    <p>you need to answer the question</p>
+    <button onclick="myFunction()">Try it</button>
+
+    <script>
+       
+
+        const data = [
+            "1. Tell me a little bit about yourself?",
+            "2. Can you tell me how you heard about this position?",
+            "3. What attracted you to our company?",
+            "4. What is your greatest strength?",
+            "5. What is your greatest weakness?",
+            "6. Tell me about a time when you had a stressful situation?",
+            "7. Where do you see yourself in 5 years?",
+            "8. What is your salary expectation?",
+            "9. Do you have any questions for me, about the company or the position?",
+        ]
+
+        function myHandle(){
+            const randNumber = Math.floor(Math.random() * data.length)
+            const qs = data[randNumber]
+            console.log(randNumber)
+            alert(qs);
+        }
+
+        function myFunction() {
+                setInterval(function () { myHandle(); }, 3000);
+        }
+    </script>
+
+</body>
+
+</html>
